@@ -1,0 +1,18 @@
+                            
+                            
+********  Welcome To the Guessing Game ********
+
+To play this game you only need to use:
+   cd     ls    cat
+
+The goal of the game is to select a name of an animal and
+guess the image of the animal from an option of 8 different images.
+
+Instructions:
+1. To start the game write  
+      Cd game and then ls 
+2. Next, select your prefered animal from the list and write 
+      cd [Prefered_animal] and then ls
+3. Choice one image from the 8 different images and write
+      cat [selected_image]
+4. Follow the instruction from the image
