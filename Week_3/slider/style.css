@@ -1,0 +1,44 @@
+
+* {
+    margin: 0;
+    padding: 0;
+  }
+  html{
+    box-sizing: border-box;
+  }
+   
+  *, ::before , ::after {
+    box-sizing: inherit;
+  }
+  ol, ul{
+    display:flex;
+    list-style: none;
+  }
+  ul {
+    height: 80vh;
+    overflow-x: hidden;
+    scroll-behavior:smooth;
+  }
+  ol {
+    justify-content: center;
+    margin-top: 3rem;
+  }
+  
+  li {
+    justify-content: center;;
+    height: 100%;
+    padding: 0.25rem;
+    text-align: center;
+  
+  }
+  ul li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1 0 100%;
+    background-color: rgb(68, 71, 114);
+    font-size: 10rem;
+  }
+  ul li:nth-child(even) {
+    background-color:green;
+  }

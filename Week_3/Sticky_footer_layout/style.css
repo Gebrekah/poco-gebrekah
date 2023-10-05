@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    font-family: sans-serif, serif,  monospace;
+}
+
+.body_container {
+    display: flex;
+    flex-direction: column;
+}
+
+.item1, .item3 {
+    text-align: center;
+    background-color: rgb(135, 139, 92);
+}
+
+ section {
+    height: 500px; 
+ }
+
+ h1, h2 {
+    text-align: center;
+    margin: 10px;;
+ } 
+
+.item2 {
+    height: 1500px;
+}
+
+.item3 {
+    position: -webkit-sticky;
+    position: sticky;
+    bottom: 0;
+}

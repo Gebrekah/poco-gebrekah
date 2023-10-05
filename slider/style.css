@@ -1,0 +1,15 @@
+ol, ul{
+    display: grid;
+    list-style: none;
+    margin: 0;
+    padding:0;
+}
+ul {
+    display: hidden;
+    height: 80vh;
+    width: 100%;
+}
+
+ol {
+    justify-content: center;
+}
