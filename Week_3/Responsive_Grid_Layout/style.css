@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;    
+}
+html {
+    box-sizing: border-box;
+    background-color: antiquewhite;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+img {
+    max-width: 100%;
+    width: auto;
+}
+h1 {
+    padding: 20px;
+    text-align: center;
+}
+body{
+    background-color: rgb(244, 240, 235);
+    margin: 20px;
+}
+main {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+
+}
+article{
+    text-align: center;
+    padding: 30px 10px;
+}
+h2{
+    padding-top: 10px;
+}
+footer {
+    width:50%;
+    margin: auto;
+}
+button{
+    text-align: center;
+    width: 200px;
+    height:60px;
+  
+}
+article:nth-child(1) {
+    grid-area: art1;  
+}
+article:nth-child(2) {
+    grid-area: art2;
+}
+article:nth-child(3) {
+    grid-area: art3;
+}
+article:nth-child(4) {
+    grid-area: art4;
+}
+
+/* Extra small devices (phones, 564px and down) */
+@media only screen and (max-width: 640px) {
+    main{
+        grid-template-columns: 1fr; 
+        grid-template-rows: auto;
+        grid-template-areas: "art1" "art2" "art3" "art4"; 
+    }
+}
+
+/* Extra small devices (phones, 564px and down) */
+@media only screen and (min-width: 640px) {
+    main{
+        grid-template-columns: 1fr 1fr; 
+        grid-template-rows: auto;
+        grid-template-areas: "art1 art2" "art3 art4"; 
+    }
+}
