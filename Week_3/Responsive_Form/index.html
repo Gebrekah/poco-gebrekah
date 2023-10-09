@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Responsive Form</title>
+</head>
+<body>
+   
+    <main>
+        <h1>Profil</h1>
+        <h2>Hier können Sie Ihre Adress-Angaben einsehen und anpassen.</h2>  
+        <form action="do_something.html" method="post">
+
+            <fieldset id="personaliche-daten">
+                <legend>Personaliche Daten</legend>
+                
+                <label for="titel">Titel</label>
+                <input type="text" id="titel" name="titel" placeholder="Optional">  
+
+                <label for="fname" value="Peter">Vorname*</label> 
+                <input type="text" id="fname" name="fname" placeholder="Peter"  autofocus required>
+
+                <label for="fname" value="Muster">Nachname*</label>   
+                <input type="text" id="fname" name="fname" placeholder="Muster" required>
+
+                <label for="geschlecht">Geschlecht*</label> 
+                <div>
+                    <input type="radio" id="woman" name="geschlecht" required> 
+                    <label for="woman">W</label>
+
+                    <input type="radio" id="male" name="geschlecht" required> 
+                    <label for="male">M</label>    
+                </div>
+
+                <label>Sprache*</label> 
+                <div>
+                    <input type="radio" id="DE" name="language" required> 
+                    <label for="DE">DE</label>
+
+                    <input type="radio" id="FR" name="language">
+                    <label for="FR">FR</label>
+
+                    <input type="radio" id="IT" name="language"> 
+                    <label for="IT">IT</label>      
+                </div>
+                
+            </fieldset>
+
+            <fieldset id="kontakt-daten">
+                <legend>Kontakt Daten</legend>
+
+                <label for="telefon">Telefon*</label>   
+                <input type="tel" id="telefon" name="telefon" placeholder="0784656578" required> 
+
+                <label for="mobile" value="Muster">Mobile</label>   
+                <input type="tel" id="mobile" name="mobile" placeholder="Optional">
+
+                <label for="Hauptnummer">Hauptnummer</label>   
+                <input type="tel" id="Hauptnummer" name="Hauptnummer" placeholder="Optional">
+
+                <label for="fax">Fax</label>   
+                <input type="tel" id="fax" name="fax" placeholder="Optional">
+
+                <label for="mail1">Mail 1*</label>   
+                <input type="email" id="mail1" name="mail" placeholder="example@gmail" required>
+                
+                <label for="mail1">Mail 2</label>   
+                <input type="email" id="mail1" name="mail" placeholder="Optional">
+            </fieldset>
+
+            <fieldset id="adress-date">
+                <legend>Adress Daten</legend>
+
+                <label for="firma">Firma*</label>   
+                <input type="text" id="firma" name="firma" placeholder="UBS" required> 
+
+                <label for="zusatzfirma" value="Muster">Zusatz Firma</label>   
+                <input type="text" id="zusatzfirma" name="zusatzfirma" placeholder="Optional">
+
+                <label for="homepage">Homepage</label>   
+                <input type="text" id="homepage" name="homepage" placeholder="Optional">
+                
+                <label for="adresse">Adress/Haus Nr*</label> 
+                <div>
+                    <input type="text" id="adresse" name="adresse" placeholder="Zentralstrasse"  required>
+                    <input type="tel" id="adresse" name="adresse" placeholder="33" required>
+                </div>  
+                
+                <label for="zusatzadresse">Zusatz Adresse</label>   
+                <input type="text" id="zusatzadresse" name="zusatzadresse" placeholder="Optional">
+
+                <label for="postfach">Postfach</label>   
+                <input type="tel" id="postfach" name="postfach" placeholder="Optional">
+
+                <label for="plz">Plz/ort*</label>  
+                <div>
+                    <input type="tel" id="plz" name="plz" placeholder="6002" required>
+                    <input type="text" id="plz" name="plz" placeholder="Zentralstrasse" required>
+                </div> 
+                
+                <label for="kanton">Kanton/ Land*</label> 
+                <div>
+                    <input type="text" id="kanton" name="kanton" placeholder="LU" required>
+                    <input type="text" id="kanton" name="kanton" placeholder="Schweiz" required>
+                </div>  
+            
+            </fieldset>
+            <input type="submit" value="Speichern">
+        </form>
+    </main>
+                         
+</body>
+</html>
