@@ -10,71 +10,70 @@
         <h1>Profil</h1>
     </header>
 
-    <main>
-        <form action="do_something.html" method="post">
+          <form action="do_something.html" method="post">
             <fieldset id="personaliche-daten">
-                <legend>Personaliche Daten</legend><br>
+                <legend>Personaliche Daten</legend>
                 <label for="titel">Titel</label>
                 <select id="titel" name="day">
-                    <option value="Dr.lic">Dr.lic</option>
-                    <option value="Frau">Frau</option> 
-                    <option value="Herr">Herr</option>
-                </select><br>        
+                    <butto>Dr.lic</button>
+                    <button>Frau</button> 
+                    <button>Herr</button>
+                </select>     
             
-                <label for="fname" value="Peter">Vorname</label> 
-                <input type="text" id="fname" name="fname" placeholder="Peter" required><br>  
-                <label for="fname" value="Muster">Nachname</label>   
-                <input type="text" id="fname" name="fname" placeholder="Muster" required><br> 
-                <label for="geschlecht">Geschlecht</label> 
+                <label for="fname" value="Peter">Vorname*</label> 
+                <input type="text" id="fname" name="fname" placeholder="Peter" required>
+                <label for="fname" value="Muster">Nachname*</label>   
+                <input type="text" id="fname" name="fname" placeholder="Muster" required>
+                <label for="geschlecht">Geschlecht*</label> 
                 <input type="radio" id="woman" name="geschlecht" checked required> 
                 <label for="woman">W</label>
                 <input type="radio" id="male" name="geschlecht" required> 
-                <label for="male">M</label><br>     
+                <label for="male">M</label>  
                 <label>Sprache</label> 
                 <input type="radio" id="DE" name="language" checked required> 
                 <label for="DE">DE</label>
                 <input type="radio" id="FR" name="language" required> 
                 <label for="FR">FR</label>
                 <input type="radio" id="IT" name="language" required> 
-                <label for="IT">IT</label><br>      
+                <label for="IT">IT</label>      
             </fieldset>
             <fieldset id="kontakt-daten">
-                <legend>Kontakt Daten</legend><br>
+                <legend>Kontakt Daten</legend>
                 <label for="telefon">Telefon</label>   
-                <input type="tel" id="telefon" name="telefon" required><br>  
+                <input type="tel" id="telefon" name="telefon" required> 
                 <label for="mobile" value="Muster">Mobile</label>   
-                <input type="tel" id="mobile" name="mobile" placeholder="Optional"><br> 
+                <input type="tel" id="mobile" name="mobile" placeholder="Optional">
                 <label for="Hauptnummer">Hauptnummer</label>   
-                <input type="tel" id="Hauptnummer" name="Hauptnummer" placeholder="Optional"><br> 
+                <input type="tel" id="Hauptnummer" name="Hauptnummer" placeholder="Optional"> 
                 <label for="fax">Fax</label>   
-                <input type="tel" id="fax" name="fax" placeholder="Optional"><br> 
+                <input type="tel" id="fax" name="fax" placeholder="Optional">
                 <label for="mail1">Mail 1</label>   
-                <input type="email" id="mail1" name="mail" required><br>
+                <input type="email" id="mail1" name="mail" required>
                 <label for="mail1">Mail 2</label>   
-                <input type="email" id="mail1" name="mail" placeholder="Optional"><br>
+                <input type="email" id="mail1" name="mail" placeholder="Optional">
             </fieldset>
 
             <fieldset id="adress-date">
-                <legend>Adress Daten</legend><br>
+                <legend>Adress Daten</legend>
                 <label for="firma">Firma</label>   
-                <input type="text" id="firma" name="firma" required><br>  
+                <input type="text" id="firma" name="firma" required> 
                 <label for="zusatzfirma" value="Muster">Zusatz Firma</label>   
-                <input type="text" id="zusatzfirma" name="zusatzfirma" placeholder="Optional"><br> 
+                <input type="text" id="zusatzfirma" name="zusatzfirma" placeholder="Optional"> 
                 <label for="homepage">Homepage</label>   
-                <input type="text" id="homepage" name="homepage" placeholder="Optional"><br> 
+                <input type="text" id="homepage" name="homepage" placeholder="Optional">
                 <label for="adresse">Adress/Haus Nr</label>   
                 <input type="text" id="adresse" name="adresse" placeholder="Musterstrasse"  required>
-                <input type="tel" id="adresse" name="adresse" placeholder="33" required><br>
+                <input type="tel" id="adresse" name="adresse" placeholder="33" required>
                 <label for="zusatzadresse">Zusatz Adresse</label>   
-                <input type="text" id="zusatzadresse" name="zusatzadresse" placeholder="Optional"><br>
+                <input type="text" id="zusatzadresse" name="zusatzadresse" placeholder="Optional">
                 <label for="postfach">Postfach</label>   
-                <input type="tel" id="postfach" name="postfach" placeholder="Optional"><br>
+                <input type="tel" id="postfach" name="postfach" placeholder="Optional">
                 <label for="plz">Plz/ort</label>   
                 <input type="tel" id="plz" name="plz" placeholder="8800" required>
-                <input type="text" id="plz" name="plz" placeholder="Musterstadt"  required><br>
+                <input type="text" id="plz" name="plz" placeholder="Musterstadt"  required>
                 <label for="kanton">Kanton/ort</label>   
                 <input type="text" id="kanton" name="kanton" placeholder="ZH" required>
-                <input type="text" id="kanton" name="kanton" placeholder="Schweiz" required><br>
+                <input type="text" id="kanton" name="kanton" placeholder="Schweiz" required>
             </fieldset>
 
             <input type="submit" value="Speichern">
