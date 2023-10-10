@@ -10,5 +10,19 @@ Output them to the screen/console like so: "I will be either NN or NN in YYYY", 
 
 let birth_year = prompt();
 let future_year = prompt();
-let age = future_year - birth_year;
-alert("I will be either " + age + " or " + (age - 1) + " in " + future_year);
+if (isFinite(birth_year) && isFinite(future_year)) {
+    if(future_year >= birth_year){
+        if((birth_year > 1900 && birth_year <= new Date().getFullYear() ) && (future_year >= new Date().getFullYear()  && future_year < 2170)) {
+            let age = future_year - birth_year;
+            alert("I will be either " + age + " or " + (age - 1) + " in " + future_year);
+        } else{
+            alert("Not feasible: please put fair years");
+        }
+        
+    } else {
+        alert("Error: the future must be greater than your birthdate");
+    }
+  
+} else {
+  alert("Error: Your input is not a number");
+}
