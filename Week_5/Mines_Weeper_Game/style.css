@@ -1,0 +1,62 @@
+html {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: inherit;
+    font-family: sans-serif;
+}
+
+body {
+    background-color: powderblue;
+    user-select: none;
+}
+
+body.defeat {
+    background-color: rgb(240, 186, 157);
+}
+
+body.victory {
+    background-color: rgb(158, 221, 143);
+}
+
+header, #message, #flag-instruction {
+    margin-top: 50px;
+    text-align: center;
+}
+
+#playfield {
+    display: block;
+    background: lightgrey;
+    margin: auto;
+    border: lightslategrey solid 1px;
+    width: fit-content;
+    margin-top: 50px;
+    box-shadow: 0px 2px 6px rgb(0, 0, 0, 0.2);
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+}
+
+.cell {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border: rgb(110, 113, 116) solid 1px;
+    text-align: center;
+    vertical-align : middle;
+    font-size: 16px;
+    line-height: 40px;
+    font-weight: 900;
+    cursor: pointer;
+}
+
+.cell:hover:not(.discovered) {
+    background-color: rgb(232, 232, 232);
+}
+
+.discovered {
+    background-color: rgb(177, 177, 177);
+}
